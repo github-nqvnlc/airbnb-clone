@@ -90,7 +90,7 @@ const Modal: React.FC<ModalProps> = ({
           <div
             className={`
                 translate
-                duration-300
+                duration-200
                 h-full
                 ${
                   showModal ? "translate-y-0" : "translate-y-full"

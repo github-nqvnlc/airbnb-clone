@@ -42,13 +42,11 @@ const LoginModal = () => {
       redirect: false,
     }).then((callback) => {
       setIsLoading(false);
-
       if (callback?.ok) {
         toast.success("Logged in successfully!");
         router.refresh();
         loginModal.onClose();
       }
-
       if (callback?.error) {
         toast.error("Login failed!");
       }
