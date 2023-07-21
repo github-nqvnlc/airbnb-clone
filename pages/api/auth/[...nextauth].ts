@@ -6,7 +6,7 @@ import FacebookProvider from "next-auth/providers/facebook";
 import CredentialsProvider from "next-auth/providers/credentials";
 import bcrypt from "bcrypt";
 
-import prisma from "../../app/libs/prismaDb";
+import prisma from "../../../app/libs/prismaDb";
 import NextAuth from "next-auth/next";
 
 export const authOptions: AuthOptions = {
