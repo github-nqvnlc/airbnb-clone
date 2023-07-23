@@ -3,21 +3,25 @@
 import React from "react";
 import Container from "../Container";
 
-import { TbBeach, TbMountain, TbPool } from "react-icons/tb";
+import { TbBeach, TbMountain, TbPool, TbTrekking } from "react-icons/tb";
 import {
   GiBarn,
   GiBoatFishing,
   GiCactus,
   GiCastle,
   GiCaveEntrance,
-  GiForestCamp,
+  GiCampingTent,
   GiIsland,
   GiWindmill,
+  GiFarmer,
+  GiShoonerSailboat,
 } from "react-icons/gi";
+import { RiAncientGateLine } from "react-icons/ri";
+import { BiHomeCircle, BiSolidDog, BiChurch } from "react-icons/bi";
 import { FaPersonSkiing } from "react-icons/fa6";
 import { BsSnow } from "react-icons/Bs";
 import { IoDiamond } from "react-icons/io5";
-import { MdOutlineVilla } from "react-icons/md";
+import { MdOutlineVilla, MdOutlineForest } from "react-icons/md";
 import CategoryBox from "../CategoryBox";
 import { usePathname, useSearchParams } from "next/navigation";
 
@@ -33,6 +37,11 @@ export const categories = [
     description: "This property is has windmills!",
   },
   {
+    label: "Home Stay",
+    icon: BiHomeCircle,
+    description: "This property is home stay!",
+  },
+  {
     label: "Modern",
     icon: MdOutlineVilla,
     description: "This property is modern!",
@@ -41,6 +50,26 @@ export const categories = [
     label: "Countryside",
     icon: TbMountain,
     description: "This property is in the countryside!",
+  },
+  {
+    label: "Temple",
+    icon: RiAncientGateLine,
+    description: "This property is near a temple!",
+  },
+  {
+    label: "Dog Friendly",
+    icon: BiSolidDog,
+    description: "This property is has dog friendly!",
+  },
+  {
+    label: "Trekking",
+    icon: TbTrekking,
+    description: "This property is close to trekking place!",
+  },
+  {
+    label: "Church",
+    icon: BiChurch,
+    description: "This property is near a church!",
   },
   {
     label: "Pools",
@@ -60,12 +89,22 @@ export const categories = [
   {
     label: "Skiing",
     icon: FaPersonSkiing,
-    description: "This property has skiing activies!",
+    description: "This property has skiing activities!",
+  },
+  {
+    label: "Farm",
+    icon: GiFarmer,
+    description: "This property is near a farm!",
   },
   {
     label: "Castles",
     icon: GiCastle,
     description: "This property is an ancient castle!",
+  },
+  {
+    label: "Yacht",
+    icon: GiShoonerSailboat,
+    description: "This property is an Yacht!",
   },
   {
     label: "Caves",
@@ -74,7 +113,7 @@ export const categories = [
   },
   {
     label: "Camping",
-    icon: GiForestCamp,
+    icon: GiCampingTent,
     description: "This property offers camping activities!",
   },
   {
