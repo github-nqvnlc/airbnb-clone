@@ -18,6 +18,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
   const loginModal = useLoginModal();
   const [isOpen, setIsOpen] = useState(false);
 
+  console.log(currentUser);
   const toggleOpen = useCallback(() => {
     setIsOpen((value) => !value);
   }, []);
@@ -47,8 +48,8 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
           onClick={toggleOpen}
           className="
                 p-4
-                md:py-1
-                md:px-2
+                md:py-2
+                md:px-4
                 border-[1px]
                 border-neutral-200
                 flex
@@ -62,9 +63,14 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
             "
         >
           <AiOutlineMenu />
-          <div className="hidden md:block">
-            <Avatar src={currentUser?.image}/>
-          </div>
+          {currentUser ? (
+            <div className="hidden md:flex md:justify-center md:items-center md:gap-4">
+              <div className="">{currentUser?.name}</div>
+              <Avatar src={currentUser?.image} />
+            </div>
+          ) : (
+            <div className="hidden md:block px-3">Menu</div>
+          )}
         </div>
       </div>
       {isOpen && (

@@ -1,11 +1,10 @@
 "use client";
 
 import React from "react";
-import axios from "axios";
 import { signIn } from "next-auth/react";
 import { AiFillGithub } from "react-icons/ai";
 import { FcGoogle } from "react-icons/fc";
-import { FaFacebook } from "react-icons/fa6";
+// import { FaFacebook } from "react-icons/fa6";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import useRegisterModal from "@/app/hooks/useRegisterModal";
 import useLoginModal from "@/app/hooks/useLoginModal";
@@ -14,7 +13,6 @@ import Heading from "../Heading";
 import Inputs from "../inputs/Inputs";
 import { toast } from "react-hot-toast";
 import Button from "../Button";
-import { sign } from "crypto";
 import { useRouter } from "next/navigation";
 
 const LoginModal = () => {
@@ -46,8 +44,7 @@ const LoginModal = () => {
         toast.success("Logged in successfully!");
         router.refresh();
         loginModal.onClose();
-      }
-      if (callback?.error) {
+      } else if (callback?.error) {
         toast.error("Login failed!");
       }
     });
@@ -55,7 +52,7 @@ const LoginModal = () => {
 
   const bodyContent = (
     <div className="flex flex-col gap-4">
-      <Heading title="Welcome back!" subtitle="Please log in to continue." />
+      <Heading title="Welcome to Booking Star!" subtitle="Please log in to continue. " />
       <Inputs
         id="email"
         type="email"
@@ -81,8 +78,19 @@ const LoginModal = () => {
   const footerContent = (
     <div className="flex flex-col gap-4 mt-3">
       <hr />
-      <Button outline label="Continue with Google." icon={FcGoogle} />
-      <Button outline label="Continue with Facebook." icon={FaFacebook} />
+      <Button
+        outline
+        label="Continue with Google."
+        icon={FcGoogle}
+        onClick={() => signIn("google")}
+      />
+      <Button
+        outline
+        label="Continue with Github."
+        icon={AiFillGithub}
+        onClick={() => signIn("github")}
+      />
+      {/* <Button outline label="Continue with Facebook." icon={FaFacebook} /> */}
       <div
         className="
           text-neutral-500
@@ -92,12 +100,15 @@ const LoginModal = () => {
         "
       >
         <div className="flex flex-row items-center justify-center gap-2">
-          <div>Already have an account?</div>
+          <div>You don't have an account?</div>
           <div
-            onClick={loginModal.onClose}
+            onClick={() => {
+              loginModal.onClose();
+              registerModal.onOpen();
+            }}
             className="text-neutral-800 cursor-pointer hover:underline"
           >
-            Log In
+            Sign up
           </div>
         </div>
       </div>
