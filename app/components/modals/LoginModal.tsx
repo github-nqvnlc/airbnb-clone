@@ -100,7 +100,7 @@ const LoginModal = () => {
         "
       >
         <div className="flex flex-row items-center justify-center gap-2">
-          <div>You don't have an account?</div>
+          <div>Do you have an account?</div>
           <div
             onClick={() => {
               loginModal.onClose();
