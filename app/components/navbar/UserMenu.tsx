@@ -40,7 +40,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
           onClick={onRent}
           className="
             hidden
-            md:block
+            lg:block
             text-sm
             font-semibold
             py-3
@@ -53,7 +53,6 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
         >
           Booking Star your home
         </div>
-
         <div
           onClick={toggleOpen}
           className="
@@ -75,7 +74,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
           <AiOutlineMenu />
           {currentUser ? (
             <div className="hidden md:flex md:justify-center md:items-center md:gap-4">
-              <div className="">{currentUser?.name}</div>
+              <div className="hidden lg:block">{currentUser?.name}</div>
               <Avatar src={currentUser?.image} />
             </div>
           ) : (
@@ -89,8 +88,8 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
             absolute
             rounded-xl
             shadow-md
-            w-[40vw]
-            md:w-3/4
+            w-[50vw]
+            lg:w-3/4
             bg-white
             overflow-hidden
             right-0
@@ -101,6 +100,11 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
           <div className="flex flex-col cursor-pointer">
             {currentUser ? (
               <>
+                <MenuItems
+                  classNames="flex flex-row items-center justify-between text-lg text-neutral-500 border-b lg:hidden"
+                  userAvatar={currentUser?.image}
+                  label={`${currentUser?.name}`}
+                />
                 <MenuItems onClick={() => {}} label="My Trips" />
                 <MenuItems onClick={() => {}} label="My Favorites" />
                 <MenuItems onClick={() => {}} label="My Reservations" />
