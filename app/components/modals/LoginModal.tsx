@@ -100,7 +100,7 @@ const LoginModal = () => {
         "
       >
         <div className="flex flex-row items-center justify-center gap-2">
-          <div>Do you have an account?</div>
+          <div>First time using Booking Star</div>
           <div
             onClick={() => {
               loginModal.onClose();
@@ -108,7 +108,7 @@ const LoginModal = () => {
             }}
             className="text-neutral-800 cursor-pointer hover:underline"
           >
-            Sign up
+            Create an account
           </div>
         </div>
       </div>
