@@ -20,7 +20,6 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
   const rentModal = useRentModal();
   const [isOpen, setIsOpen] = useState(false);
 
-  console.log(currentUser);
   const toggleOpen = useCallback(() => {
     setIsOpen((value) => !value);
   }, []);
