@@ -19,7 +19,7 @@ import {
 import { RiAncientGateLine } from "react-icons/ri";
 import { BiHomeCircle, BiSolidDog, BiChurch } from "react-icons/bi";
 import { FaPersonSkiing } from "react-icons/fa6";
-import { IoIosSnow } from "react-icons/Io";
+// import { IoIosSnow } from "react-icons/Io";
 
 import { IoDiamond } from "react-icons/io5";
 import { MdOutlineVilla } from "react-icons/md";
@@ -117,11 +117,11 @@ export const categories = [
     icon: GiCampingTent,
     description: "This property offers camping activities!",
   },
-  {
-    label: "Arctic",
-    icon: IoIosSnow,
-    description: "This property is in arctic environment!",
-  },
+  // {
+  //   label: "Arctic",
+  //   icon: IoIosSnow,
+  //   description: "This property is in arctic environment!",
+  // },
   {
     label: "Desert",
     icon: GiCactus,
