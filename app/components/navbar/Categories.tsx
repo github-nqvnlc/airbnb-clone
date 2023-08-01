@@ -19,9 +19,10 @@ import {
 import { RiAncientGateLine } from "react-icons/ri";
 import { BiHomeCircle, BiSolidDog, BiChurch } from "react-icons/bi";
 import { FaPersonSkiing } from "react-icons/fa6";
-import { BsSnow } from "react-icons/Bs";
+import { IoIosSnow } from "react-icons/Io";
+
 import { IoDiamond } from "react-icons/io5";
-import { MdOutlineVilla, MdOutlineForest } from "react-icons/md";
+import { MdOutlineVilla } from "react-icons/md";
 import CategoryBox from "../CategoryBox";
 import { usePathname, useSearchParams } from "next/navigation";
 
@@ -118,7 +119,7 @@ export const categories = [
   },
   {
     label: "Arctic",
-    icon: BsSnow,
+    icon: IoIosSnow,
     description: "This property is in arctic environment!",
   },
   {
