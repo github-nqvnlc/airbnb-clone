@@ -1,4 +1,4 @@
-# <img style="width:30px; height:auto" src='https://raw.githubusercontent.com/github-nqvnlc/booking-star/main/app/favicon.ico' /> Welcome Booking Star
+# <img style="width:30px; height:auto" src='https://raw.githubusercontent.com/github-nqvnlc/booking-star/main/app/favicon.ico' /> Welcome Booking Star - Visit [Website Booking Star](https://booking-star.vercel.app/)
 ![Copyright by Van Loc (github-nqvnlc)](https://github.com/github-nqvnlc/booking-star/blob/main/public/images/logo100.png?raw=true)
 
 **Booking Star** is a cutting-edge, user-friendly application that revolutionizes the way you plan your travels and accommodations. With a wide range of functionalities, Booking Star aims to make your travel experiences seamless and unforgettable.
