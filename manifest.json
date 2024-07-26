@@ -1,0 +1,57 @@
+{
+  "background_color": "#ffffff",
+  "description": "Booking Star cloneBooking Star is a cutting-edge, user-friendly application that revolutionizes the way you plan your travels and accommodations. With a wide range of functionalities, Booking Star aims to make your travel experiences seamless and unforgettable.",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Booking Star",
+  "screenshots": [
+    {
+      "src": "./public/images/screenshots/Screenshot_1.png",
+      "type": "image/x-icon",
+      "sizes": "any"
+    },
+    {
+      "src": "./public/images/screenshots/Screenshot_2.png",
+      "type": "image/x-icon",
+      "sizes": "any"
+    },
+    {
+      "src": "./public/images/screenshots/Screenshot_3.png",
+      "type": "image/x-icon",
+      "sizes": "any"
+    },
+    {
+      "src": "./public/images/screenshots/Screenshot_4.png",
+      "type": "image/x-icon",
+      "sizes": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Start Live Session",
+      "short_name": "Start Live",
+      "description": "Jump direction into starting or joining a live session",
+      "url": "/booking-star.vercel.app/",
+      "icons": [
+        {
+          "src": "https://pwabuilder.com/assets/icons/icon_192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "orientation": "any",
+  "scope": "/booking-star.vercel.app/",
+  "short_name": "BStar",
+  "start_url": "/booking-star.vercel.app/",
+  "theme_color": "#fb7d13",
+  "icons": [
+    {
+      "src": "./public/images/logo100.png",
+      "type": "image/x-icon",
+      "sizes": "any"
+    }
+  ],
+  "id": "booking-star",
+  "lang": "en"
+}
