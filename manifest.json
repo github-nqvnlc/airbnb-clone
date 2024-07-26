@@ -9,28 +9,28 @@
     }
   ],
   "background_color": "#ffffff",
-  "description": "Booking Star cloneBooking Star is a cutting-edge, user-friendly application that revolutionizes the way you plan your travels and accommodations. With a wide range of functionalities, Booking Star aims to make your travel experiences seamless and unforgettable.",
+  "description": "Booking Star is a cutting-edge, user-friendly application that revolutionizes the way you plan your travels and accommodations. With a wide range of functionalities, Booking Star aims to make your travel experiences seamless and unforgettable.",
   "dir": "ltr",
   "display": "standalone",
   "name": "BookingStar",
   "screenshots": [
     {
-      "src": "https://booking-star.vercel.app/images/screenshots/Screenshot_1.png",
+      "src": "/images/screenshots/Screenshot_1.png",
       "type": "image/png",
       "sizes": "any"
     },
     {
-      "src": "https://booking-star.vercel.app/images/screenshots/Screenshot_2.png",
+      "src": "/images/screenshots/Screenshot_2.png",
       "type": "image/png",
       "sizes": "any"
     },
     {
-      "src": "https://booking-star.vercel.app/images/screenshots/Screenshot_3.png",
+      "src": "/images/screenshots/Screenshot_3.png",
       "type": "image/png",
       "sizes": "any"
     },
     {
-      "src": "https://booking-star.vercel.app/images/screenshots/Screenshot_4.png",
+      "src": "/images/screenshots/Screenshot_4.png",
       "type": "image/png",
       "sizes": "any"
     }
@@ -39,24 +39,24 @@
     {
       "name": "Start Live Session",
       "short_name": "Start Live",
-      "description": "Jump direction into starting or joining a live session",
-      "url": "/booking-star.vercel.app/",
+      "description": "Jump directly into starting or joining a live session",
+      "url": "/",
       "icons": [
         {
-          "src": "https://booking-star.vercel.app/images/logo100.png",
+          "src": "/images/logo100.png",
           "sizes": "192x192"
         }
       ]
     }
   ],
   "orientation": "any",
-  "scope": "/booking-star.vercel.app/",
+  "scope": "/",
   "short_name": "BStar",
-  "start_url": "/booking-star.vercel.app/",
+  "start_url": "/",
   "theme_color": "#fb7d13",
   "icons": [
     {
-      "src": "https://booking-star.vercel.app/images/star-icon.png",
+      "src": "/images/star-icon.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
