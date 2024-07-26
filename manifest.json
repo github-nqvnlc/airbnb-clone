@@ -63,5 +63,13 @@
     }
   ],
   "id": "booking-star",
-  "lang": "en"
+  "lang": "en",
+  "launch_handler": {
+    "client_mode": "auto"
+  },
+  "categories": ["travel", "booking"],
+  "iarc_rating_id": "e10e-452a",
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "scope_extensions": []
 }
