@@ -12,7 +12,7 @@
   "description": "Booking Star cloneBooking Star is a cutting-edge, user-friendly application that revolutionizes the way you plan your travels and accommodations. With a wide range of functionalities, Booking Star aims to make your travel experiences seamless and unforgettable.",
   "dir": "ltr",
   "display": "standalone",
-  "name": "Booking Star",
+  "name": "BookingStar",
   "screenshots": [
     {
       "src": "https://booking-star.vercel.app/images/screenshots/Screenshot_1.png",
@@ -56,9 +56,10 @@
   "theme_color": "#fb7d13",
   "icons": [
     {
-      "src": "/images/star-icon.png",
-      "type": "image/x-icon",
-      "sizes": "any"
+      "src": "https://booking-star.vercel.app/images/star-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
     }
   ],
   "id": "booking-star",
