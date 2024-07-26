@@ -16,22 +16,22 @@
   "screenshots": [
     {
       "src": "https://booking-star.vercel.app/images/screenshots/Screenshot_1.png",
-      "type": "image/x-icon",
+      "type": "image/png",
       "sizes": "any"
     },
     {
       "src": "https://booking-star.vercel.app/images/screenshots/Screenshot_2.png",
-      "type": "image/x-icon",
+      "type": "image/png",
       "sizes": "any"
     },
     {
       "src": "https://booking-star.vercel.app/images/screenshots/Screenshot_3.png",
-      "type": "image/x-icon",
+      "type": "image/png",
       "sizes": "any"
     },
     {
       "src": "https://booking-star.vercel.app/images/screenshots/Screenshot_4.png",
-      "type": "image/x-icon",
+      "type": "image/png",
       "sizes": "any"
     }
   ],
