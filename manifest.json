@@ -56,9 +56,9 @@
   "theme_color": "#fb7d13",
   "icons": [
     {
-      "src": "./public/images/logo100.png",
-      "sizes": "192x192",
-      "type": "image/png"
+      "src": "/_next/static/media/metadata/favicon.e3ada4cb.ico",
+      "type": "image/x-icon",
+      "sizes": "any"
     }
   ],
   "id": "booking-star",
